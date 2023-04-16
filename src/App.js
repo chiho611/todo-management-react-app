@@ -1,13 +1,14 @@
 import './App.css';
 import React from "react";
-import Counter from "./Components/counter/Counter";
+import TodoApp from "./Components/todo/TodoApp";
 
 
 function App() {
     return (
         <div className="App">
             {/*<PlayingWithProps props1="value1" props2="value2"/>*/}
-            <Counter />
+            {/*<Counter />*/}
+            <TodoApp></TodoApp>
         </div>
     );
 }
