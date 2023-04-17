@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import TodoApp from "./Components/todo/TodoApp";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
