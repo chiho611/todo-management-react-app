@@ -9,6 +9,7 @@ import LogoutComponent from "./LogoutComponent";
 import ErrorComponent from "./ErrorComponent";
 import FooterComponent from "./FooterComponent";
 import AuthProvider, {useAuth} from "../secruity/AuthContext";
+import TodoComponent from "./TodoComponent";
 
 export default function TodoApp() {
 
@@ -32,6 +33,8 @@ export default function TodoApp() {
                     <Route path="/welcome/:username"
                            element={<AuthenticatedRoute><WelcomeComponent/></AuthenticatedRoute>}/>
                     <Route path="/todos" element={<AuthenticatedRoute><ListTodosComponent/></AuthenticatedRoute>}/>
+                    <Route path="/todo/:id" element={<AuthenticatedRoute><TodoComponent/></AuthenticatedRoute>}/>
+
                     <Route path="/logout" element={<AuthenticatedRoute><LogoutComponent/></AuthenticatedRoute>}/>
 
                     <Route path="*" element={<ErrorComponent/>}/>

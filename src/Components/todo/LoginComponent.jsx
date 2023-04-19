@@ -5,7 +5,6 @@ import {useAuth} from "../secruity/AuthContext";
 export default function LoginComponent() {
     const [username, setUsername] = useState("in28minutes")
     const [password, setPassword] = useState("")
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const [showErrorMessage, setShowErrorMessage] = useState(false)
     const navigate = useNavigate();
     const authContext = useAuth();

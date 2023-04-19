@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
-import React, {useContext} from "react";
-import {AuthContext, useAuth} from "../secruity/AuthContext";
+import React from "react";
+import {useAuth} from "../secruity/AuthContext";
 
 export default function HeaderComponent() {
 
@@ -10,7 +10,7 @@ export default function HeaderComponent() {
     function logout(){
         authContext.logout();
     }
-    console.log("header", authContext)
+    // console.log("header", authContext)
 
     return (
         <header className="border-bottom border-light border-5 mb-5 p-2">
