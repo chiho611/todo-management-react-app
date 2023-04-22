@@ -10,7 +10,7 @@ export default function WelcomeComponent() {
         retrieveHelloWorldPathVariable("Ranga")
             .then((response) => successResponse(response))
             .catch((error) => errorResponse(error))
-            .finally(() => console.log("clean up"))
+            // .finally(() => console.log("clean up"))
     }
 
     function successResponse(response) {
