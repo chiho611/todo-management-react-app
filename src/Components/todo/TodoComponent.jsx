@@ -37,7 +37,6 @@ export default function TodoComponent() {
             targetDate: values.targetDate,
             done: false
         }
-        console.log(todo)
 
         if (id == -1) {
             console.log(todo)
