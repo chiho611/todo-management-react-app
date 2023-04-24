@@ -18,7 +18,7 @@ export default function TodoComponent() {
     )
 
     function retrieveTodo(id) {
-        if (id !== -1) {
+        if (Number(id) !== -1) {
             retrieveTodoByIdApi(id)
                 .then(response => {
                     console.log(response)
@@ -37,10 +37,10 @@ export default function TodoComponent() {
             targetDate: values.targetDate,
             done: false
         }
-
-        if (id == -1) {
+        console.log(Number(id))
+        if (Number(id) === -1) {
             console.log(todo)
-            createTodoApi(username, todo)
+            createTodoApi(todo)
                 .then(() => {
                     navigate("/todos")
                 })
